@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; 
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3em;
+    color: #325c9b; 
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#inp {
+    width: 80%;
+    max-width: 400px;
+    padding: 15px 20px;
+    font-size: 1.1em;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#inp:focus {
+    border-color: #5a62c9;
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.3);
+}
+
+#btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 25px;
+    background-color: #47acff; 
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#btn:hover {
+    background-color: #03176e; 
+    transform: scale(1.05);
+}
+
+#para {
+    margin-top: 30px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-size: 1.3em;
+    color: #333;
+    min-height: 100px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    #inp {
+        width: 90%;
+    }
+    #para {
+        width: 90%;
+    }
+}
